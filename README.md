@@ -1,6 +1,7 @@
 # Personal webpage
+`https://biharee.github.io/
 
-This folder contains a simple GitHub Pages site.
+<!-- This folder contains a simple GitHub Pages site.
 
 ## Publish on GitHub Pages
 
@@ -24,4 +25,4 @@ This folder contains a simple GitHub Pages site.
 
 - Update text in `index.html`.
 - Replace the placeholder publications in the Publications section.
-- Adjust colors and typography in `styles.css`.
+- Adjust colors and typography in `styles.css`. -->
