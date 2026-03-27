@@ -103,7 +103,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-size: clamp(2rem, 3.2vw, 2.8rem);
   line-height: 1.05;
 }
 
@@ -178,13 +178,14 @@ main {
 .item-title {
   display: block;
   font-weight: 600;
+  font-size: 1rem;
   margin-bottom: 4px;
 }
 
 .item-meta {
   display: block;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .item-note {
