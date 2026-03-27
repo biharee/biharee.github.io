@@ -191,6 +191,14 @@ main {
   color: var(--accent);
 }
 
+.paper-link:visited {
+  color: inherit;
+}
+
+.item-title a {
+  text-decoration: none;
+}
+
 .item-meta {
   display: block;
   color: var(--muted);
