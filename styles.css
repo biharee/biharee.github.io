@@ -80,6 +80,22 @@ body {
   overflow: hidden;
 }
 
+.hero-split {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero-content {
+  display: grid;
+  gap: 16px;
+}
+
+.hero-media {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .hero::after {
   content: "";
   position: absolute;
@@ -92,6 +108,17 @@ body {
 .hero > * {
   position: relative;
   z-index: 1;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 16px;
+  object-fit: cover;
+  padding: 0;
+  background: var(--card);
+  box-shadow: none;
+  border: none;
 }
 
 .eyebrow {
@@ -274,6 +301,19 @@ main {
 
   .hero {
     padding: 24px;
+  }
+
+  .hero-split {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-media {
+    justify-content: flex-start;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
   }
 
   .card {
