@@ -182,20 +182,21 @@ main {
   margin-bottom: 4px;
 }
 
+.paper-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.paper-link:hover {
+  color: var(--accent);
+}
+
 .item-meta {
   display: block;
   color: var(--muted);
   font-size: 0.9rem;
 }
 
-.doi-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.doi-link:hover {
-  color: var(--accent);
-}
 
 .item-note {
   display: block;
