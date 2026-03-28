@@ -248,11 +248,26 @@ main {
 }
 
 .contact-line {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 140px 1fr;
   gap: 16px;
   border-bottom: 1px solid rgba(26, 28, 31, 0.08);
   padding-bottom: 8px;
+  align-items: flex-start;
+}
+
+.contact-line > * {
+  min-width: 0;
+}
+
+.contact-value {
+  text-align: right;
+}
+
+.contact-value a {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
 }
 
 .contact-line:last-child {
@@ -265,9 +280,14 @@ main {
   color: var(--muted);
 }
 
+
 .contact-line a {
   color: var(--accent);
   text-decoration: none;
+}
+
+.address-line span:last-child {
+  text-align: left;
 }
 
 .footer {
