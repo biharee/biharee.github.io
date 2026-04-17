@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Publications | Bihareelal Meghwal</title>
+    <meta name="description" content="Publications by Bihareelal Meghwal, PhD scholar in Mathematics at IIT Roorkee (IITR)." />
+    <meta name="keywords" content="Bihareelal Meghwal publications, Biharee IITR, IIT Roorkee, reinforcement learning, combinatorial optimization" />
+    <link rel="canonical" href="https://biharee.github.io/publications.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Publications | Bihareelal Meghwal" />
+    <meta property="og:description" content="Publications by Bihareelal Meghwal, PhD scholar in Mathematics at IIT Roorkee (IITR)." />
+    <meta property="og:url" content="https://biharee.github.io/publications.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;600&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="subpage">
+    <div class="page">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="brand" href="index.html">Bihareelal Meghwal</a>
+        <div class="nav-links">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="publications.html">Publications</a>
+          <a class="nav-link" href="experience.html">Experience</a>
+          <a class="nav-link" href="workshops.html">Workshops</a>
+        </div>
+      </nav>
+
+      <header class="hero" id="top">
+        <div class="eyebrow">Research</div>
+        <h1>Publications</h1>
+
+      </header>
+
+      <main>
+        <section class="card">
+          <div class="section-title">2026</div>
+          <ul class="list">
+            <li class="pub-item">
+              <span class="item-title">
+                Learning to Solve Many-to-Many Pickup and Delivery Problems With Multi-Head Heterogeneous Attention
+              </span>
+              <span class="item-meta">
+                B. Meghwal, M. K. Gupta, and S. K. Gupta. IEEE Transactions on Intelligent Transportation Systems, 2026. 10.1109/TITS.2026.3675631.
+              </span>
+              <div class="pub-toggles">
+                <button class="toggle-btn abstract-toggle" data-target="abstract-1" type="button">Abstract</button>
+                <button class="toggle-btn paper-toggle" onclick="window.open('https://doi.org/10.1109/TITS.2026.3675631','_blank')" type="button">Paper</button>
+                <button class="toggle-btn code-toggle" onclick="window.open('https://github.com/biharee/HAP','_blank')" type="button">Code</button>
+              </div>
+              <div class="pub-abstract" id="abstract-1" style="display:none;">
+                <span class="abstract-text">Recently, deep reinforcement learning has gained attention for solving routing problems due to its ability to learn complex patterns and optimize sequential decision-making. Despite their success in various routing problems, the applicability of learning-based methods on pickup and delivery problems (PDPs) is limited and only addresses one-to-one PDPs and their variants. However, the many-to-many PDP addressed in this paper is a practical variant of the routing problems and finds several applications in logistics and supply chains. We propose a novel reinforcement learning framework empowered by a multi-head heterogeneous attention mechanism (MHHA) and a decoder capable of exploring a diverse set of solutions, namely HAP, to generate efficient solutions for many-to-many PDP. The proposed framework incorporates an encoder-decoder structure designed explicitly for many-to-many PDP. In particular, the encoder consists of the MHHA mechanism to capture the many-to-many relationships and effectively model the flow constraints. Moreover, it is integrated with the multi-solution generator, polynet and masking scheme to generate high-quality diverse solutions. Additionally, we improve the solution quality of HAP using a warm starting variable neighbourhood search. As extensive experimental results demonstrate, the proposed method outperforms state-of-the-art metaheuristic and learning-based approaches. Additionally, in bi-objective (time and gap) comparison, the HAP lies on the Pareto efficient frontier, proving its effectiveness. Moreover, the HAP effectively generalizes to diverse problem sizes, unseen data distributions, benchmark datasets, and also solves one-to-one PDP more effectively than baseline methods, showing its adaptability and robustness. Finally, we conduct ablation studies to justify the proposed design.</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </main>
+
+      <script>
+        // Toggle abstract visibility
+        document.addEventListener('DOMContentLoaded', function() {
+          document.querySelectorAll('.abstract-toggle').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+              var target = document.getElementById(btn.getAttribute('data-target'));
+              if (target.style.display === 'none' || target.style.display === '') {
+                target.style.display = 'block';
+              } else {
+                target.style.display = 'none';
+              }
+            });
+          });
+        });
+      </script>
+
+      <footer class="footer">
+        <span>Last updated March 2026</span>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="experience.html">Experience</a>
+          <a href="workshops.html">Workshops</a>
+          <a href="#top">Back to top</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
